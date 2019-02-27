@@ -113,7 +113,7 @@ void refreshtheDisplay() {
 
   // update counter (lines 0-1)
   snprintf(
-      buff, sizeof(buff), "PAX:%-4d",
+      buff, sizeof(buff), "PAX:%-2d",
       (int)macs.size()); // convert 16-bit MAC counter to decimal counter value
   u8x8.draw2x2String(0, 0,
                      buff); // display number on unique macs total Wifi + BLE
