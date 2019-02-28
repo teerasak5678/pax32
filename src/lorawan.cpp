@@ -1,6 +1,7 @@
 // Basic Config
 #include "lorawan.h"
 
+
 // Local logging Tag
 static const char TAG[] = "lora";
 

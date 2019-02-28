@@ -49,7 +49,9 @@ ESP32 hardware timers
 
 // Basic Config
 #include "main.h"
+////////////////////////////////
 
+///////////////////////////////
 configData_t cfg; // struct holds current device configuration
 char display_line6[16], display_line7[16]; // display buffers
 uint8_t volatile channel = 0;              // channel rotation counter
@@ -69,7 +71,9 @@ PayloadConvert payload(PAYLOAD_BUFFER_SIZE);
 static const char TAG[] = "main";
 
 void setup() {
-
+///////////////////////////////
+  // Start serial communication for debugging purposes
+////////////////////////////
   // disable the default wifi logging
   esp_log_level_set("wifi", ESP_LOG_NONE);
 
